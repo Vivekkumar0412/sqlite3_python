@@ -33,5 +33,9 @@ ins = '''
 data = conn.execute("select * from students order by s_id")
 for a in data:
     print(a)
+
+data2 = conn.execute("select * from students group by s_class")
+for a in data2:
+    print(a)
 conn.commit()
 conn.close()
