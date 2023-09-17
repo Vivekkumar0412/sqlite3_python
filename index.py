@@ -35,6 +35,7 @@ for a in data:
     print(a)
 
 data2 = conn.execute("select * from students group by s_class")
+data3 = conn.execute("select * from students")
 for a in data2:
     print(a)
 conn.commit()
