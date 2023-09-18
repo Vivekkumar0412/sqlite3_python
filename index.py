@@ -40,3 +40,21 @@ for a in data2:
     print(a)
 conn.commit()
 conn.close()
+obj = {
+    "name":"Vivek singh rajput"
+}
+obj["age"] = 24
+obj["age"] = 0
+
+print(obj)
+l = "vivek ,kumar"
+l1 = l.split(" ")
+print(l1)
+l3 = []
+for i in range(5):
+    data = {"name":"Divya Singh","age":24}
+    l3.append(data)
+print(l3)
+data["age"]=25
+for i in range(5):
+    print(l3[i])
